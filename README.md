@@ -1,5 +1,5 @@
 
-# Vulkan Implemention of "A Reconstruction Filter for Plausible Motion Blur" - [Web Page](https://aminaliari.github.io/posts/motionblur/)
+# A Vulkan Implemention of "A Reconstruction Filter for Plausible Motion Blur" - [Web Page](https://aminaliari.github.io/posts/motionblur/)
 
   
 
