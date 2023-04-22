@@ -1,0 +1,37 @@
+#version 450 core
+
+#extension GL_EXT_samplerless_texture_functions : enable
+
+layout (UPDATE_FREQ_PER_FRAME, binding = 0)        uniform texture2D tileTexture;
+layout (UPDATE_FREQ_PER_FRAME, binding = 1, rg16f) uniform image2D   outputTexture;
+
+vec2 vmax(vec2 v1, vec2 v2);
+
+layout (local_size_x = 8, local_size_y = 8, local_size_z = 1) in;
+void main ()
+{
+    vec2 neighborMax = vec2(0.0, 0.0);
+    for (int u = -1; u <= 1; ++u)
+    {
+        for (int v = -1; v <= 1; ++v)
+        {
+            ivec2 index = ivec2(gl_GlobalInvocationID.xy) + ivec2(u, v);
+            vec2 velSample = texelFetch(tileTexture, index, 0).xy;
+            neighborMax = vmax(neighborMax, velSample);
+        }
+    }
+    
+    imageStore(outputTexture, ivec2(gl_GlobalInvocationID.xy), vec4(neighborMax.xy, 0.0, 1.0));
+}
+
+vec2 vmax(vec2 v1, vec2 v2)
+{
+    // we do not want to calc the len directly, so we can go with dot product
+
+    // if (dot(v1, v1) > dot(v2, v2))
+    //     return v1;
+    // else
+    //     return v2;
+
+    return mix(v2, v1, step(0, dot(v1, v1) - dot(v2, v2)));
+}
