@@ -17,7 +17,7 @@
 
 ```
 
-D:\dev\motion-blur\Examples_3\Unit_Tests\PC Visual Studio 2017/Unit_Tests.sln
+\Examples_3\Unit_Tests\PC Visual Studio 2017/Unit_Tests.sln
 
 ```
 
