@@ -1,5 +1,5 @@
 
-# A Vulkan Implemention of "A Reconstruction Filter for Plausible Motion Blur" - [Web Page](https://aminaliari.github.io/posts/motionblur/)
+# An Implemention of "A Reconstruction Filter for Plausible Motion Blur" - [Web Page](https://aminaliari.github.io/posts/motionblur/)
 
   
 
@@ -20,6 +20,7 @@
 \Examples_3\Unit_Tests\PC Visual Studio 2017\Unit_Tests.sln
 
 ```
+4. Select `DebugVK` or `ReleaseVK` as the build target.
 
   
 
