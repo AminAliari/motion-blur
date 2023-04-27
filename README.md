@@ -17,7 +17,7 @@
 
 ```
 
-\Examples_3\Unit_Tests\PC Visual Studio 2017\Unit_Tests.sln
+/Examples_3/Unit_Tests/PC Visual Studio 2017/Unit_Tests.sln
 
 ```
 4. Select `DebugVK` or `ReleaseVK` as the build target.
