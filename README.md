@@ -9,7 +9,7 @@
 
 ## How to build
 
-1. Install the Vulkan SDK and
+1. Install the Vulkan SDK.
 
 2. Run `PRE_BUILD.bat` to download Sponza's Art assets.
 
