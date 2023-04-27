@@ -1,3 +1,4 @@
+<div align="center">
 
 # An Implemention of "A Reconstruction Filter for Plausible Motion Blur" - [Web Page](https://aminaliari.github.io/posts/motionblur/)
 
@@ -5,6 +6,7 @@
 
 [![IMAGE ALT TEXT HERE](header.png)](https://aminaliari.github.io/posts/motionblur)
 
+</div>
   
 
 ## How to build
